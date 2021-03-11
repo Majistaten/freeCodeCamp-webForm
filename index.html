@@ -5,9 +5,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" scr="..\app.js"></script>
-    <title>Document</title>
+    <script type="text/javascript" scr="../app.js"></script>
+    <title>FFC-SurveyForm</title>
   </head>
-  <body></body>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="description text-center">
+      Explaining the description
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Firstname Lastname"
+          required
+        />
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="example@domain.com"
+          required
+        />
+      </div>
+    </form>
+  </body>
   <footer></footer>
 </html>

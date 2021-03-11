@@ -1,0 +1,33 @@
+::root {
+}
+
+html {
+  background: url("/Pictures/Noice.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: sans-serif "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: white;
+  margin: 0;
+}
+
+form {
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+}
+
+.form-control {
+}
