@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="..\styles.css" type="text/css" />
+    <link rel="stylesheet" href="\assets\css\styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" scr="../app.js"></script>
     <title>FFC-SurveyForm</title>
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
-    <p id="description" class="description text-center">
+    <h1 id="title" class="text-center header">freeCodeCamp Survey Form</h1>
+    <p id="description" class="description text-center header">
       Explaining the description
     </p>
     <form id="survey-form">
-      <div class="form-group">
+      <div id="name-label-div" class="form-group">
         <label id="name-label" for="name">Name</label>
         <input
           type="text"
@@ -26,7 +29,7 @@
           required
         />
       </div>
-      <div class="form-group">
+      <div id="email-label-div" class="form-group">
         <label id="email-label" for="email">Email</label>
         <input
           type="email"
@@ -37,7 +40,7 @@
           required
         />
       </div>
-      <div class="form-group">
+      <div id="number-label-div" class="form-group">
         <label id="number-label" for="number"
           >Age<span style="color: #c0c0c0; font-size: 0.9rem">
             <i>(optional)</i></span
@@ -53,7 +56,7 @@
           placeholder="Age"
         />
       </div>
-      <div class="form-group">
+      <div id="dropdown-div" class="form-group">
         <label for="dropdown">What is your favourite choir?</label>
         <select name="option" id="dropdown" class="form-control" required>
           <option disabled selected>Favored choir</option>
@@ -63,7 +66,7 @@
           <option value="trash">Taking out the trash</option>
         </select>
       </div>
-      <div class="form-group">
+      <div id="radio-div" class="form-group">
         <p>This is the question</p>
         <label
           ><input
@@ -93,7 +96,91 @@
           That one
         </label>
       </div>
+      <div id="checkbox-div" class="form-group">
+        <p>Questioning the questions question</p>
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="This-one"
+            class="input-checkbox"
+          />This one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="another-one"
+            class="input-checkbox"
+          />Another one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="that-one"
+            class="input-checkbox"
+          />That one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="same-one"
+            class="input-checkbox"
+          />Same one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="some-one"
+            class="input-checkbox"
+          />some one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="nasty-one"
+            class="input-checkbox"
+          />Nasty one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="dark-one"
+            class="input-checkbox"
+          />Dark one</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="pick-many"
+            value="and-another-one"
+            class="input-checkbox"
+          />And another one</label
+        >
+      </div>
+      <div id="textarea-div" class="form-group">
+        <label for="textarea">Input something here</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          wordcount
+          placeholder="What is this box?"
+          class="input-textarea"
+        ></textarea>
+      </div>
+      <div>
+        <input id="submit" type="submit" value="Submit" />
+      </div>
     </form>
+    <footer></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script type="text/javascript" scr="assets\js\app.js"></script>
   </body>
-  <footer></footer>
 </html>
